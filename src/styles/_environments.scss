@@ -1,0 +1,30 @@
+$primary-color: #7B56FF !default;
+$error-color: #B81E24;
+
+$black: #000 !default;
+$white: #fff !default;
+// ----------------spacing----------------
+$spacing: (
+    "small": 8px,
+    "standard": 16px,
+    "medium": 24px,
+    "double": 32px
+) !default;
+// ----------------heading----------------
+$heading-font-family: "Roboto", sans-serif !default;
+$heading-1-font-size: 32px !default;
+$heading-2-font-size: 30px !default;
+$heading-3-font-size: 28px !default;
+$heading-4-font-size: 24px !default;
+$heading-5-font-size: 20px !default;
+$heading-6-font-size: 18px !default;
+// ----------------body----------------
+$body-font-family: "Roboto", sans-serif !default;
+$body-color: #222 !default;
+$body-bg: $white !default;
+// ----------------anchor----------------
+$link-color: #797979 !default;
+$link-hover-color: #967CFF !default;
+// ----------------breakpoints----------------
+$tablet-width: 1366px !default;
+$mobile-width: 768px !default;

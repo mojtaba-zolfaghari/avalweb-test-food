@@ -1,0 +1,110 @@
+@use "./environments" as env;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  font-family: var(--body-font-family, #{env.$body-font-family});
+  font-size: var(--body-font-size, 16px);
+  font-weight: var(--body-font-weight, 400);
+  line-height: var(--body-line-height, 1);
+  color: var(--body-color, #{env.$body-color});
+  background-color: var(--body-bg, #{env.$body-bg});
+  margin: 0;
+  text-align: var(--body-text-align, left);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  font-family: var(--heading-font-family, #{env.$heading-font-family});
+  font-weight: var(--heading-font-weight, 700);
+  line-height: var(--heading-line-height, 1.5);
+  color: var(--heading-color, #000);
+  margin-top: var(--heading-margin-top, 16px);
+  margin-bottom: var(--heading-margin-bottom, 16px);
+}
+
+h1 {
+  font-size: var(--heading-1-font-size, #{env.$heading-1-font-size});
+}
+
+h2 {
+  font-size: var(--heading-2-font-size, #{env.$heading-2-font-size});
+}
+
+h3 {
+  font-size: var(--heading-3-font-size, #{env.$heading-3-font-size});
+}
+
+h4 {
+  font-size: var(--heading-4-font-size, #{env.$heading-4-font-size});
+}
+
+h5 {
+  font-size: var(--heading-5-font-size, #{env.$heading-5-font-size});
+}
+
+h6 {
+  font-size: var(--heading-6-font-size, #{env.$heading-6-font-size});
+}
+
+a {
+  color: var(--link-color, #{env.$link-color});
+  text-decoration: none;
+}
+
+a:hover {
+  --link-color: var(--link-hover-color, #{env.$link-hover-color});
+}
+
+p {
+  margin-top: var(--paragraph-margin-top, 0);
+  margin-bottom: var(--paragraph-margin-bottom, 16px);
+  line-height: var(--paragraph-line-height, 1.5);
+  font-size: var(--paragraph-font-size, 16px);
+  color: var(--paragraph-color, #000);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: var(--list-padding, 0);
+  margin: var(--list-margin, 0);
+}
+
+b,
+strong,
+.strong {
+  font-weight: 700;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+  -webkit-text-fill-color: var(--autofill-color, #484848) !important;
+}
+
+input:-webkit-autofill:disabled {
+  --autofill-color: #C9C9C9;
+}
