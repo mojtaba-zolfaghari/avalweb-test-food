@@ -1,0 +1,7 @@
+app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-750);
+    padding: 16px var(--sides-spacing);
+}

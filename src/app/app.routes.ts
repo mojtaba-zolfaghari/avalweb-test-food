@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { LayoutComponent } from './shared/components/layout/layout.component';
 
 export default [
-
     {
         path: '',
         component: LayoutComponent,
