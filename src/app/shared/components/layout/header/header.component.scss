@@ -2,6 +2,9 @@ app-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--gray-750);
+    border-bottom: 1px solid var(--gray-900);
     padding: 16px var(--sides-spacing);
+    --heading-margin-top: 0;
+    --heading-margin-bottom: 0;
+    --heading-1-font-size: 24px;
 }

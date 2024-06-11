@@ -108,3 +108,7 @@ input:-webkit-autofill:active {
 input:-webkit-autofill:disabled {
   --autofill-color: #C9C9C9;
 }
+
+button {
+  cursor: pointer;
+}
