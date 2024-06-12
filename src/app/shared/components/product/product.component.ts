@@ -10,6 +10,10 @@ import { BasketService } from '../../services/basket.service';
   ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss',
+  host: {
+    'class': 'shadow',
+    '[class.added]': 'this.product.added'
+  },
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductComponent {

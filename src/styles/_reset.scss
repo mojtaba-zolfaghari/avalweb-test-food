@@ -117,4 +117,5 @@ input:-webkit-autofill:disabled {
 button {
   display: block;
   cursor: pointer;
+  user-select: none;
 }

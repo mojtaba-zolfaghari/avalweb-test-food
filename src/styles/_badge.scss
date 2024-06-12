@@ -8,6 +8,7 @@
     background-color: env.$error-color;
     color: env.$white;
     border-radius: 50%;
+    outline: 1px solid var(--gray-650);
     border: 2px solid env.$white;
     font-size: 14px;
     font-weight: 700;

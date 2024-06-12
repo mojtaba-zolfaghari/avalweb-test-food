@@ -1,9 +1,22 @@
+@use "../../../../styles/environments" as env;
+
 :host {
     display: block;
     padding: var(--product-padding, 12px);
     border-radius: var(--product-border-radius, 6px);
-    border: 1px solid var(--gray-700);
+    border: 1px solid var(--product-border-color, var(--gray-700));
+    transition: transform 0.3s;
     --heading-3-font-size: 18px;
+
+    &.added {
+        --product-border-color: #{env.$success-color};
+        animation-name: rotate;
+        animation-duration: 0.8s;
+    }
+
+    &:hover{
+        transform: translateY(-3px);
+    }
 }
 h3 {
     display: -webkit-box;
@@ -15,4 +28,19 @@ h3 {
 button {
     width: 100%;
     margin-top: 16px;
+
+    &.deactivate {
+        pointer-events: none;
+        --button-border-color: #{env.$success-color};
+        --button-color: #{env.$success-color};
+    }
+}
+
+@keyframes rotate {
+    from{
+        transform: rotateY(0)
+    }
+    to{
+        transform: rotateY(360deg)
+    }
 }
