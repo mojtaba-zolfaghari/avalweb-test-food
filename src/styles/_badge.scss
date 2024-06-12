@@ -1,0 +1,16 @@
+@use "./environments" as env;
+
+.badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: env.$error-color;
+    color: env.$white;
+    border-radius: 50%;
+    border: 2px solid env.$white;
+    font-size: 14px;
+    font-weight: 700;
+    width: 22px;
+    height: 22px;
+}

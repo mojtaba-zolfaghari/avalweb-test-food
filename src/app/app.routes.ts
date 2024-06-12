@@ -9,19 +9,15 @@ export default [
             {
                 path: 'home',
                 loadComponent: () => import('./home/home.component'),
-                title: 'home',
+                title: 'Home',
             },
             {
                 path: 'not-found',
                 loadComponent: () => import('./not-found/not-found.component'),
-                title: 'not-found',
+                title: 'Not Found 404',
             },
             { path: '', pathMatch: 'full', redirectTo: 'home' },
+            { path: '**', redirectTo: 'not-found' },
         ]
     },
-    {
-        path: '**',
-        loadComponent: () => import('./not-found/not-found.component'),
-        title: 'not found 404',
-    }
 ] as Routes;

@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { BasketService } from '../../../services/basket.service';
 
 @Component({
   selector: 'app-header',
@@ -11,5 +12,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
+
+  basketItems = this.basketService.getBasketItems();
+
+  constructor(
+    private basketService: BasketService
+  ) {
+
+  }
 
 }

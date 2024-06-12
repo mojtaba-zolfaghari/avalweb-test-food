@@ -26,5 +26,6 @@ export class ProductComponent {
       return;
     }
     this.product.added = true;
+    this.basketService.addItem(this.product);
   }
 }
