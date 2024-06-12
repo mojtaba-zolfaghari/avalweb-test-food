@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +8,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
-  encapsulation: ViewEncapsulation.None
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
 

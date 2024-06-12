@@ -93,6 +93,11 @@ strong,
   font-weight: 700;
 }
 
+ins {
+  color: var(--ins-color, #{env.$success-color});
+  font-weight: var(--ins-font-weight, 500);
+}
+
 svg {
   vertical-align: middle;
 }
@@ -110,5 +115,6 @@ input:-webkit-autofill:disabled {
 }
 
 button {
+  display: block;
   cursor: pointer;
 }

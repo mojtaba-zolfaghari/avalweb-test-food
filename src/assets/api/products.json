@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "thumbnail": "https://picsum.photos/200/200?random=1",
+            "title": "Microsoft Surface Pro 7",
+            "price": 865.36,
+            "stock": 56
+        },
+        {
+            "id": 2,
+            "thumbnail": "https://picsum.photos/200/200?random=2",
+            "title": "Microsoft Surface Pro 7",
+            "price": 534.92,
+            "stock": 30
+        },
+        {
+            "id": 3,
+            "thumbnail": "https://picsum.photos/200/200?random=3",
+            "title": "Samsung Galaxy S21",
+            "price": 65.74,
+            "stock": 99
+        },
+        {
+            "id": 4,
+            "thumbnail": "https://picsum.photos/200/200?random=4",
+            "title": "Google Pixel 6",
+            "price": 40.59,
+            "stock": 86
+        },
+        {
+            "id": 5,
+            "thumbnail": "https://picsum.photos/200/200?random=5",
+            "title": "Sony WH-1000XM4",
+            "price": 101.76,
+            "stock": 14
+        },
+        {
+            "id": 6,
+            "thumbnail": "https://picsum.photos/200/200?random=6",
+            "title": "Dell XPS 13",
+            "price": 813.56,
+            "stock": 91
+        },
+        {
+            "id": 7,
+            "thumbnail": "https://picsum.photos/200/200?random=7",
+            "title": "Google Pixel 6",
+            "price": 771.94,
+            "stock": 43
+        },
+        {
+            "id": 8,
+            "thumbnail": "https://picsum.photos/200/200?random=8",
+            "title": "Microsoft Surface Pro 7",
+            "price": 476.92,
+            "stock": 50
+        },
+        {
+            "id": 9,
+            "thumbnail": "https://picsum.photos/200/200?random=9",
+            "title": "Apple iPhone 13",
+            "price": 967.48,
+            "stock": 38
+        },
+        {
+            "id": 10,
+            "thumbnail": "https://picsum.photos/200/200?random=10",
+            "title": "Dell XPS 13",
+            "price": 917.32,
+            "stock": 21
+        }
+    ]
+}

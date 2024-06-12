@@ -1,1 +1,23 @@
-<p>home works!</p>
+<ng-container *ngTemplateOutlet="startFromHereTemplate; context:{$implicit: products$ | async}" />
+
+<ng-template #startFromHereTemplate let-product>
+    @if(product === null) {
+        <!-- Loading -->
+        <p>Loading...</p>
+    } @else if(product === false) {
+        <!-- Error -->
+        <p>A server side error has occurred.</p>
+    } @else {
+        @if (product.length) {
+            <!-- Main Content -->
+            <div class="products-grid-container">
+                @for (item of product; track item.id) {
+                    <app-product [product]="item" />
+                }
+            </div>
+        } @else {
+            <!-- Empty Array -->
+            <p>Table is Empty!</p>
+        }
+    }
+</ng-template>
