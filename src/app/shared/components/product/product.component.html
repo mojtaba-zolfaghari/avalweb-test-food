@@ -3,7 +3,7 @@
 </div>
 <h3 [title]="product.title">{{ product.title }}</h3>
 <ins>{{ product.price }} $</ins>
-<button type="button" (click)="addToCard()" [class.deactivate]="product.added">
+<button type="button" (click)="addToCart()" [class.deactivate]="product.added">
     @if (product.added) {
         Has been Added
     } @else {

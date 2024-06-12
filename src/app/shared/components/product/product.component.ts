@@ -25,7 +25,7 @@ export class ProductComponent {
 
   }
 
-  addToCard(): void {
+  addToCart(): void {
     if (this.product.added) {
       return;
     }

@@ -3,14 +3,14 @@
         {
             "id": 1,
             "thumbnail": "https://picsum.photos/200/200?random=1",
-            "title": "Microsoft Surface Pro 7",
+            "title": "Microsoft Surface Pro 9",
             "price": 865.36,
             "stock": 56
         },
         {
             "id": 2,
             "thumbnail": "https://picsum.photos/200/200?random=2",
-            "title": "Microsoft Surface Pro 7",
+            "title": "Microsoft Surface Pro 10",
             "price": 534.92,
             "stock": 30
         },

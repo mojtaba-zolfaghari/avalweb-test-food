@@ -1,0 +1,15 @@
+@if(basketItems().length) {
+    <div>
+        <header>Total Price: {{basketTotalPrice().toFixed(2)}}</header>
+        <ul>
+            @for (item of basketItems(); track item.id) {
+                <li>
+                    <button type="button" (click)="removeFromCart(item)">x</button>
+                    {{item.title}}
+                </li>
+            }
+        </ul>
+    </div>
+} @else {
+    <h4>Basket is Empty !</h4>
+}

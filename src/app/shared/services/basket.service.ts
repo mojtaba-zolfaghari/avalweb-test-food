@@ -6,9 +6,9 @@ import { Product } from '../models/models';
 })
 export class BasketService {
   private basketItems = signal<Product[]>([]);
-  private basketTotalPrice = computed(() => this.basketItems().reduce((total, product) => total + ((product.quantity || 1) * product.price), 0));
+  readonly basketTotalPrice = computed(() => this.basketItems().reduce((total, product) => total + ((product.quantity || 1) * product.price), 0));
 
-  getBasketItems() {
+  getBasketItems() {   
     return this.basketItems.asReadonly();
   }
 

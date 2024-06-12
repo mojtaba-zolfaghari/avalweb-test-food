@@ -12,10 +12,11 @@
         --product-border-color: #{env.$success-color};
         animation-name: rotate;
         animation-duration: 0.8s;
+        background: #1987541f;
     }
 
-    &:hover{
-        transform: translateY(-3px);
+    &:not(.added):hover{
+        transform: translateY(-2px);
     }
 }
 h3 {
